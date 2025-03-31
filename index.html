@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#">Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="#" onclick="showProject('project1')">Project 1</a></li>
+                        <li><a href="#" onclick="showProject('project2')">Project 2</a></li>
+                        <li><a href="#" onclick="showProject('project3')">Project 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Here are some of the projects I've worked on during my studies in computer programming.</p>
+        </section>
+
+        <section id="projects">
+            <div id="project1" class="project">
+                <h2>Project 1</h2>
+                <p>Description of project 1.</p>
+            </div>
+            <div id="project2" class="project">
+                <h2>Project 2</h2>
+                <p>Description of project 2.</p>
+            </div>
+            <div id="project3" class="project">
+                <h2>Project 3</h2>
+                <p>Description of project 3.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by [Your Name]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
