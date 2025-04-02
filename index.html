@@ -3,53 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Home - Online Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li>
-                    <a href="#">Projects</a>
-                    <ul class="dropdown">
-                        <li><a href="#" onclick="showProject('project1')">Project 1</a></li>
-                        <li><a href="#" onclick="showProject('project2')">Project 2</a></li>
-                        <li><a href="#" onclick="showProject('project3')">Project 3</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="#">Projects</a>
+                <ul class="dropdown">
+                    <li><a href="project1.html">COMP2152 - Python Console Game</a></li>
+                    <li><a href="project2.html">COMP1230 - PHP Voting App</a></li>
+                    <li><a href="project3.html">COMP2139 - .NET Project Management App</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Here are some of the projects I've worked on during my studies in computer programming.</p>
-        </section>
+<main>
+    <section id="home">
+        <h1>Online Portfolio</h1>
+        <p>I am currently a Computer Programming and Analysis student at George Brown College. </p>
+        <p>Below are some examples of the projects I've worked on so far during my studies. </p>
+    </section>
 
-        <section id="projects">
-            <div id="project1" class="project">
-                <h2>Project 1</h2>
-                <p>Description of project 1.</p>
-            </div>
-            <div id="project2" class="project">
-                <h2>Project 2</h2>
-                <p>Description of project 2.</p>
-            </div>
-            <div id="project3" class="project">
-                <h2>Project 3</h2>
-                <p>Description of project 3.</p>
-            </div>
-        </section>
-    </main>
+    <section id="projects">
+        <div id="project1" class="project">
+            <h2><a href="project1.html">COMP2152 - Python Console Game</a></h2>
+            <p>In our Open-Source course we learned to work with git using GitHub and we learned to code in python.
+                This course was aimed at getting us comfortable collaborating in development teams to add features
+                to already existing code bases, being comfortable cloning, pulling, merging and pushing our code.
+                This honed our collaboration and team work skills as well as out coding abilities. </p>
+        </div>
+        <div id="project2" class="project">
+            <h2><a href="project2.html">COMP1230 - PHP Voting App</a></h2>
+            <p>In our Advanced Web Programming course we focused on server-side programming,
+                using PHP and MySQL. We were tasked with developing a Voting app for registered,
+            logged-in users.</p>
+        </div>
+        <div id="project3" class="project">
+            <h2><a href="project3.html">COMP2139 - .NET Project Management App</a></h2>
+            <p>In our Web Application course we took a deep-dive into MVC architecture,
+                creating a project management app in .NET using C#.
+            This was a group project were we collaborated by working on different aspects of the project,
+                leveraging git and GitHub as a collaboration tool. </p>
+        </div>
+    </section>
+</main>
 
-    <footer>
-        <p>Created by [Your Name]</p>
-    </footer>
+<footer>
+    <p>Created by Penny Ahlstrom</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

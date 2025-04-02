@@ -1,61 +1,150 @@
-/* Basic styles for header and layout */
-body {
-    font-family: Arial, sans-serif;
+/* General body and layout settings */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header and Navigation Bar */
 header {
-    background-color: #333;
+    background-color: #2C3E50;
     color: white;
-    padding: 10px;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    position: relative;
+    margin: 0 20px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #2980B9;
+    border-radius: 5px;
 }
 
 header nav ul li .dropdown {
     display: none;
     position: absolute;
-    background-color: #333;
+    top: 100%;
+    left: 0;
+    background-color: #34495E;
+    width: 200px;
     list-style: none;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 header nav ul li:hover .dropdown {
     display: block;
 }
 
+header nav ul li .dropdown li a {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #34495E;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li .dropdown li a:hover {
+    background-color: #2980B9;
+}
+
+/* Main content styles */
 main {
-    padding: 20px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/*li {*/
+/*    list-style-position: inside;*/
+/*    list-style-type: square;*/
+/*}*/
+
+p {
+    font-size: 1.2em;
+    color: #7F8C8D;
+    margin-bottom: 40px;
+}
+
+/* Project Section */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .project {
-    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Project descriptions can be styled */
 .project h2 {
-    color: #333;
+    font-size: 1.8em;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.project p {
+    color: #7F8C8D;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
