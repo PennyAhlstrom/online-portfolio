@@ -137,6 +137,29 @@ p {
     line-height: 1.5;
 }
 
+.project img {
+    width: 100%; /* Adjust the size to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Add some space between text and image */
+}
+
+/* Ensures the container takes up the full width of the screen */
+.image-container {
+    display: flex;               /* Use flexbox to align items side by side */
+    justify-content: space-between; /* Space out images evenly */
+    width: 100vw;                /* Make the container 100% of the viewport width */
+    margin-bottom: 20px;         /* Add space below the image container */
+    gap: 20px;                   /* Adds space between images */
+}
+
+.image-container img {
+    width: 33.33%;               /* Each image takes up one-third of the container */
+    height: auto;                /* Keep the aspect ratio intact */
+    object-fit: cover;           /* Ensure images scale properly without stretching */
+}
+
+
+
 /* Footer Styles */
 footer {
     background-color: #2C3E50;
