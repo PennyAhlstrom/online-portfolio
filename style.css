@@ -101,6 +101,19 @@ p {
     margin-bottom: 40px;
 }
 
+
+/* Style for all links in about section */
+#about a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element, or set a specific color if preferred */
+}
+
+/* Style for links after being clicked (visited state) */
+#about a:visited {
+    color: inherit; /* Make sure the color remains the same after visiting the link */
+}
+
+
 /* Project Section */
 #projects {
     display: flex;
@@ -122,6 +135,22 @@ p {
 .project:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for all links */
+.project a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element, or set a specific color if preferred */
+}
+
+/* Style for links after being clicked (visited state) */
+.project a:visited {
+    color: inherit; /* Make sure the color remains the same after visiting the link */
+}
+
+/* Optionally, add a hover effect for better user experience */
+.project a:hover {
+    color: #2980b9; /* Change to a color of your choice on hover */
 }
 
 .project h2 {
@@ -158,6 +187,94 @@ p {
     object-fit: cover;           /* Ensure images scale properly without stretching */
 }
 
+/* Contact Form Section */
+#contact {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #5f778c; /* Slightly darker gray to match the overall color scheme */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+#contact h2 {
+    font-size: 2rem;
+    color: white; /* Same dark blue as navbar to maintain color consistency */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: white; /* Lighter gray for label text */
+    text-align: left; /* Align labels to the left */
+}
+
+/* Input Fields & Textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Lighter border to contrast with darker form background */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f2f2f7; /* White background for input fields */
+    color: #333; /* Dark text for readability */
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+.form-group button {
+    background-color: #2c3e50; /* Blue button to match the navbar */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #2980B9; /* Lighter blue when hovered */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #contact {
+        padding: 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group button {
+        font-size: 1rem;
+    }
+}
 
 
 /* Footer Styles */
@@ -170,4 +287,8 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+#footer p {
+    color: #5f778c;
 }
